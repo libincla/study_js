@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<style>
+			body {
+				background-color: tan;
+			}
+			input {
+				background-color: orange;
+				color:green;
+			}
+		</style>
+		<title> one  times one</title>
+	</head>
+
+	<body>
+
+			乘数:   <input type="number" id="t1" value="t1" /> &nbsp; 
+			被乘数: <input type="number" id="t2" name="t2" /> <br>
+			结果=   <span id="y1"></span>
+
+
+		<script>
+			function show() 
+			{
+				var x = document.getElementById("t1").value;
+				var y = document.getElementById("t2").value;
+				var res = x*y;
+				document.getElementById("y1").innerHTML = res;
+			}
+
+		</script>
+		<br>
+		<button type="button" onclick="show()"> show </button>
+	</body>
+</html>
